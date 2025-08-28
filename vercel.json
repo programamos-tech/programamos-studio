@@ -2,6 +2,8 @@
   "version": 2,
   "rewrites": [
     { "source": "/", "destination": "/landing-programamos/landing/index.html" },
+    { "source": "/demo/(.*)", "destination": "/landing-programamos/demo/$1" },
+    { "source": "/cafe/(.*)", "destination": "/landing-programamos/demo/cafe/$1" },
     { "source": "/(.*)", "destination": "/landing-programamos/landing/$1" }
   ]
 }
