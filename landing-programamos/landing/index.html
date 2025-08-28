@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Programamos — Estudio web</title>
+  <meta name="description" content="Construimos tu sitio web con funcionalidades para tu negocio y automatizaciones que quitan fricción.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600;700&family=Manrope:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body id="top">
+  <!-- Fondo -->
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="nav__inner">
+      <a class="brand" href="#top" aria-label="Programamos">
+        <img src="./assets/logo-programamos.png" alt="Programamos" />
+      </a>
+      <!-- Navegación oculta temporalmente
+      <ul id="mainmenu" class="menu">
+        <li><a href="../demo/demo.html">{nuestro_trabajo}</a></li>
+        <li><a href="#proceso">#born_in_$incelejo</a></li>
+        <li><a href="#planes">"'la_escuela'"</a></li>
+      </ul>
+      -->
+    </div>
+  </nav>
+
+<!-- BANNER CAFECITO angosto (estructura original .coffee) -->
+<section class="coffee">
+  <div class="coffee__inner">
+    <!-- Imagen izquierda -->
+    <div class="coffee__img">
+      <img src="./assets/1.png" alt="Personas conversando con café">
+    </div>
+
+    <!-- Texto marquee centro -->
+    <div class="coffee__marquee">
+      <div class="track mono">
+        <span>¿Quieres entender mejor cómo se construye un sitio web o cómo funcionan los desarrollos de software? • </span>
+        <span>Tomémonos un café virtual o presencial, sin costo, y conversemos sobre tus ideas y necesidades. • </span>
+        <span>¿Quieres entender mejor cómo se construye un sitio web o cómo funcionan los desarrollos de software?  • </span>
+        <span>Tomémonos un café virtual o presencial, sin costo, y conversemos sobre tus ideas y necesidades. • </span>
+      </div>
+    </div>
+
+    <!-- Botones derecha -->
+    <div class="coffee__ctas">
+      <a
+        class="btn btn--light mono"
+        target="_blank" rel="noopener"
+        href="https://calendar.google.com/calendar/u/0/r/eventedit?text=Reuni%C3%B3n%20con%20Programamos&details=Conversemos%20de%20tus%20necesidades%20y%20c%C3%B3mo%20apoyarte%20con%20tecnolog%C3%ADa.&add=programamos.st%40gmail.com">
+        Agenda tu reunión virtual
+      </a>
+      <a
+        class="btn btn--solid mono"
+        target="_blank" rel="noopener"
+        href="https://wa.me/573002061711?text=%C2%A1Hola%21%20Quiero%20tomar%20un%20caf%C3%A9%20con%20ustedes%20y%20conversar%20sobre%20mi%20proyecto.">
+        Café presencial
+      </a>
+    </div>
+  </div>
+</section>
+
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container hero__grid">
+      <div class="hero__copy">
+        <h1 class="mono">
+          Creamos sitios web y desarrollos personalizados que ponen a tu negocio en internet y lo hacen más fácil de gestionar con software.
+        </h1>
+        <p class="lead">
+          Ya sea un sitio web para que tu negocio tenga presencia en internet o un desarrollo a la medida que mejore y automatice procesos internos, te ayudamos a crecer con tecnología.
+        </p>
+        <div class="hero__ctas">
+          <a class="btn btn--ghost" href="#servicios">Ver servicios</a>
+          <a class="btn btn--solid" href="#planes">Escríbenos</a>
+        </div>
+      </div>
+
+      <aside class="code card" aria-label="Ejemplo de automatización">
+        <div class="bar"><span class="dot"></span><span class="dot"></span><span class="dot"></span></div>
+        <pre id="typewriter"><span class="caret"></span></pre>
+      </aside>
+    </div>
+  </header>
+
+<!-- DE ESCUELA A FÁBRICA -->
+<section id="story" class="section story">
+  <div class="container story__grid">
+
+    <!-- Carrusel a la izquierda -->
+    <figure class="story__media" aria-label="Escuela Programamos">
+      <div class="carousel" id="storyCarousel" aria-roledescription="carrusel">
+        <div class="carousel__track">
+          <div class="carousel__slide is-active">
+            <img src="./assets/2.png" alt="Clase en la Escuela Programamos" loading="lazy">
+          </div>
+          <div class="carousel__slide">
+            <img src="./assets/3.png" alt="Taller de desarrollo web" loading="lazy">
+          </div>
+          <div class="carousel__slide">
+            <img src="./assets/4.png" alt="Equipo de la fábrica de software" loading="lazy">
+          </div>
+          <div class="carousel__slide">
+            <img src="./assets/5.png" alt="Demo con clientes" loading="lazy">
+          </div>
+        </div>
+
+        <!-- Controles -->
+        <button class="carousel__btn prev" aria-label="Anterior" data-dir="-1">‹</button>
+        <button class="carousel__btn next" aria-label="Siguiente" data-dir="1">›</button>
+        <div class="carousel__dots" aria-hidden="true"></div>
+      </div>
+    </figure>
+
+  <!-- Texto a la derecha -->
+<div class="story__copy">
+  <h2 class="mono">De escuela a fábrica 🚀</h2>
+  <p class="muted">
+    Iniciamos en <b>2022 como Escuela Programamos</b>, formando talento tech en Sincelejo.
+    Hoy ese talento se convierte en acción: abrimos nuestra <b>fábrica de software</b>
+    para construir <b>soluciones digitales</b> que impacten a los negocios de la región.
+  </p>
+  <p class="muted">
+    Desarrollamos desde <b>sitios web modernos y funcionales</b> hasta
+    <b>aplicaciones y sistemas a la medida</b> que optimizan procesos,
+    integran servicios y facilitan la gestión de tu empresa.
+  </p>
+  <p class="muted">
+    Contamos con más de <b>7 años de experiencia en desarrollo de software</b>, gracias al trabajo
+    de nuestros fundadores en <b>startups colombianas e internacionales</b> como
+    Merqueo (Colombia), Suma Wealth (Los Ángeles) y Tangelo (México).
+  </p>
+  <p class="muted">
+    Más que un proveedor, queremos ser tu <b>aliado tecnológico</b>: escuchamos tus necesidades y construimos
+    contigo herramientas que den <b>presencia en internet</b> a tu negocio y lo ayuden a crecer.
+  </p>
+
+  <div class="story__ctas">
+    <a class="btn btn--solid" href="#contacto">Conversemos</a>
+    <a class="btn" href="#planes">Ver {servicios}</a>
+  </div>
+</div>
+
+    
+  </div>
+</section>
+
+  <!-- PROCESO -->
+  <section id="proceso" class="section proceso">
+    <div class="container">
+      <h2 class="mono">¿Cómo trabajamos?</h2>
+      <p class="muted">Del primer acercamiento hasta el despliegue y soporte, paso a paso y contigo.</p>
+
+      <!-- SDLC CÍRCULO INTERACTIVO -->
+      <div class="sdlc">
+        <div class="sdlc__vis" aria-hidden="false">
+          <svg class="sdlc__ring" viewBox="0 0 240 240">
+            <defs>
+              <linearGradient id="sdlcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%"  stop-color="var(--brand)"/>
+                <stop offset="100%" stop-color="var(--brand-2)"/>
+              </linearGradient>
+            </defs>
+            <circle cx="120" cy="120" r="88" class="sdlc__track"></circle>
+            <circle cx="120" cy="120" r="88" class="sdlc__progress"></circle>
+          </svg>
+
+          <div class="sdlc__marker" id="sdlcMarker"></div>
+
+          <ul class="sdlc__labels mono" id="sdlcLabels" role="tablist" aria-label="Ciclo de vida">
+            <li class="sdlc__label is-active" data-step="0" role="tab">Requisitos</li>
+            <li class="sdlc__label" data-step="1" role="tab">Diseño</li>
+            <li class="sdlc__label" data-step="2" role="tab">Implementación</li>
+            <li class="sdlc__label" data-step="3" role="tab">Pruebas</li>
+            <li class="sdlc__label" data-step="4" role="tab">Despliegue</li>
+            <li class="sdlc__label" data-step="5" role="tab">Mantenimiento</li>
+            <li class="sdlc__label" data-step="6" role="tab">Retroalimentación</li>
+          </ul>
+        </div>
+
+        <article class="sdlc__panel card" id="sdlcPanel" aria-live="polite">
+          <header class="panel__head">
+            <span class="badge mono" id="sdlcIndex">1/7</span>
+            <h3 class="mono" id="sdlcTitle">Requisitos</h3>
+          </header>
+          <p id="sdlcText">
+            Aterrizamos objetivos, usuarios, casos de uso y criterios de éxito. Priorizamos el MVP y definimos entregables.
+          </p>
+          <footer class="panel__actions">
+            <button class="btn btn--ghost mono" id="sdlcPrev" aria-label="Anterior">← Anterior</button>
+            <div class="dots" id="sdlcDots" aria-hidden="true"></div>
+            <button class="btn mono" id="sdlcMore" aria-haspopup="dialog" aria-controls="sdlcModal">Más info</button>
+            <button class="btn btn--solid mono" id="sdlcNext" aria-label="Siguiente">Siguiente →</button>
+          </footer>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLANES -->
+<section id="planes" class="planes">
+  <div class="container">
+    <div class="planes__head">
+      <h2 class="mono">{servicios}</h2>
+      <p class="muted">Cuéntanos qué necesitas y te cotizamos según alcance y requerimientos.</p>
+    </div>
+
+<div class="pricing-grid">
+
+  <!-- Starter -->
+  <article class="plan">
+    <div class="plan__img">
+      <img src="./assets/6.png" alt="Starter plan preview" loading="lazy">
+    </div>
+
+    <!-- Etiqueta tipo chip -->
+    <span class="plan__tag is-starter">Ideal para empezar</span>
+
+    <h3 class="mono plan__title">Starter — Página web básica</h3>
+    <p class="plan__subtitle muted">
+      Ideal para: <b>hoteles, cafés, restaurantes</b> y negocios que solo necesitan presencia en línea.
+    </p>
+    <ul class="plan__list">
+      <li>Dominio + Hosting + <b>SSL</b> (ej: www.tunegocio.com)</li>
+      <li>Diseño personalizado en <b>Figma</b></li>
+      <li>Hasta <b>3 secciones</b>: inicio, servicios, contacto</li>
+      <li><b>Optimización móvil</b></li>
+      <li>Integración rápida a <b>WhatsApp</b></li>
+    </ul>
+
+    <div class="plan__meta">
+      <div class="pill-line"><b>Entrega:</b> 1–2 semanas (estimado para un sitio de 3 secciones)</div>
+    </div>
+
+    <!-- Botones: quedan siempre en la misma posición -->
+    <div class="plan__actions">
+      <button class="btn btn--solid quote-btn" data-plan="starter">Solicitar cotización</button>
+    </div>
+  </article>
+
+  <!-- Full Stack -->
+  <article class="plan">
+    <div class="plan__img">
+      <img src="./assets/7.png" alt="Full Stack plan preview" loading="lazy">
+    </div>
+
+    <span class="plan__tag is-full">A medida</span>
+
+    <h3 class="mono plan__title">Full Stack — Desarrollo a la medida</h3>
+    <p class="plan__subtitle muted">
+      Perfecto para <b>empresas</b> que necesitan funcionalidades personalizadas y digitalizar procesos.
+    </p>
+    <ul class="plan__list">
+      <li>Dominio + Hosting + <b>SSL</b></li>
+      <li><b>Documentación</b> técnica y funcional</li>
+      <li><b>Flujos de usuario</b> en Figma</li>
+      <li>Frontend <b>(React.js)</b> y Backend <b>(Laravel)</b></li>
+      <li>Integraciones con <b>APIs</b></li>
+    </ul>
+
+    <div class="plan__meta">
+      <div class="pill-line"><b>Entrega:</b> por fases según requerimientos (definimos milestones)</div>
+    </div>
+
+    <div class="plan__actions">
+      <button class="btn btn--solid quote-btn" data-plan="full">Solicitar cotización</button>
+    </div>
+  </article>
+
+  <!-- Escuela -->
+  <article class="plan">
+    <div class="plan__img">
+      <img src="./assets/8.png" alt="Clases y cursos" loading="lazy">
+    </div>
+
+    <span class="plan__tag is-school">Clases</span>
+
+    <h3 class="mono plan__title">Escuela de Programación</h3>
+    <p class="plan__subtitle muted">
+      Grupos pequeños, mentorías y práctica real.
+    </p>
+    <ul class="plan__list">
+      <li>Frontend: <b>HTML</b>, <b>CSS</b>, <b>JavaScript</b>, <b>React</b></li>
+      <li>Backend: <b>PHP</b>, <b>Laravel</b>, <b>APIs</b>, <b>SQL</b></li>
+      <li>Deploy: hosting, dominios, SSL, variables</li>
+      <li>Integraciones y automatizaciones</li>
+    </ul>
+
+    <div class="plan__meta">
+      <div class="pill-line"><b>Modalidad:</b> grupos pequeños + mentorías</div>
+    </div>
+
+    <div class="plan__actions">
+      <a class="btn btn--solid" id="schoolEnrollBtn" href="#">Inscripciones</a>
+    </div>
+  </article>
+
+</div>
+  </div>
+</section>
+
+
+  <!-- FOOTER -->
+<footer class="footer">
+  <div class="container footer__grid2">
+    <div class="foot-left">
+      <img class="footer__logo" src="./assets/logo-programamos.png" alt="Programamos">
+      <p class="footer__geo mono">Sincelejo, Colombia</p>
+    </div>
+    <div class="foot-mid">
+      <p class="footer__copy mono">Programamos — tu idea la hacemos software.</p>
+    </div>
+    <div class="foot-right">
+      <ul class="footer__icons" aria-label="Redes sociales">
+        <li><a href="#" aria-label="Instagram" class="ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a></li>
+        <li><a href="#" aria-label="LinkedIn" class="ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 9H9V20H6V9Z" fill="currentColor"/><path d="M7.5 4C6.67 4 6 4.67 6 5.5C6 6.33 6.67 7 7.5 7C8.33 7 9 6.33 9 5.5C9 4.67 8.33 4 7.5 4Z" fill="currentColor"/><path d="M11 9H14V10.8C14.6 9.8 15.8 9 17.5 9C20 9 21 10.4 21 13.2V20H18V14C18 12.5 17.5 11.8 16.4 11.8C15.1 11.8 14.5 12.8 14.5 14.2V20H11V9Z" fill="currentColor"/></svg>
+        </a></li>
+        <li><a href="#" aria-label="GitHub" class="ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.58 2 12.26C2 16.76 4.87 20.52 8.84 21.9C9.34 21.99 9.52 21.68 9.52 21.41C9.52 21.18 9.51 20.58 9.51 19.84C7 20.4 6.48 18.86 6.48 18.86C6.03 17.71 5.35 17.4 5.35 17.4C4.39 16.74 5.43 16.76 5.43 16.76C6.5 16.84 7.06 17.95 7.06 17.95C8.02 19.69 9.66 19.19 10.28 18.92C10.38 18.23 10.66 17.75 10.97 17.49C8.78 17.23 6.48 16.35 6.48 12.36C6.48 11.2 6.9 10.26 7.62 9.54C7.51 9.28 7.13 8.17 7.72 6.63C7.72 6.63 8.62 6.34 9.51 7.26C10.37 7.01 11.3 6.88 12.22 6.88C13.14 6.88 14.07 7.01 14.93 7.26C15.82 6.34 16.72 6.63 16.72 6.63C17.31 8.17 16.93 9.28 16.82 9.54C17.54 10.26 17.96 11.2 17.96 12.36C17.96 16.36 15.66 17.22 13.47 17.48C13.86 17.82 14.2 18.46 14.2 19.44C14.2 20.87 14.19 21.97 14.19 21.41C14.19 21.68 14.37 21.99 14.87 21.9C18.84 20.52 21.71 16.76 21.71 12.26C21.71 6.58 17.23 2 11.71 2H12Z" fill="currentColor"/></svg>
+        </a></li>
+        <li><a href="#" aria-label="Facebook" class="ico">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14 9H16.5L16 12H14V20H11V12H9V9H11V7.5C11 5.57 12.07 4 14.5 4H17V7H15.2C14.54 7 14 7.12 14 7.94V9Z" fill="currentColor"/></svg>
+        </a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+
+  <script src="app.js" defer></script>
+
+  <!-- Botón flotante de cotización (solo mobile) -->
+  <a
+    href="https://wa.me/573002061711?text=Hola%20%F0%9F%91%8B%20quiero%20una%20cotizaci%C3%B3n%20gratuita%20para%20mi%20sitio%20web/desarrollo.%20%C2%BFMe%20gu%C3%ADas%3F"
+    class="fab-quote mono" aria-label="Haz tu cotización completamente gratis por WhatsApp" target="_blank" rel="noopener"
+  >Haz tu cotización gratis</a>
+
+  <!-- Modal SDLC: Más información -->
+  <div class="modal" id="sdlcModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="modal__backdrop" data-close="sdlcModal"></div>
+    <div class="modal__content">
+      <button class="modal__close" id="sdlcModalClose" aria-label="Cerrar" data-close="sdlcModal">✕</button>
+      <div class="card">
+        <header class="panel__head">
+          <span class="badge mono" id="sdlcModalIdx">1/7</span>
+          <h3 class="mono" id="sdlcModalTitle">Requisitos</h3>
+        </header>
+        <div id="sdlcModalBody"></div>
+        <div class="modal__actions">
+          <button class="btn" data-close="sdlcModal">Entendido</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

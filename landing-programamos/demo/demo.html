@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Programamos — Demos de sitios</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;700;800&family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+
+<header class="demo-hero">
+  <h1 class="mono">Así quedaría tu sitio web</h1>
+  <p>Tres ejemplos reales en móvil y desktop: cafetería, hotel y microcréditos.</p>
+</header>
+
+<nav class="demo-nav">
+  <div class="demo-nav__inner">
+    <a href="cafe/index.html">Cafetería</a>
+    <a href="#hotel">Hotel</a>
+    <a href="#ferreteria">Ferretería</a>
+    <a href="#microcreditos">Microcréditos</a>
+  </div>
+</nav>
+
+<!-- ========== DEMO 1: CAFETERÍA / MENÚ + PEDIR AQUÍ ========== -->
+<section id="cafe" class="demo demo-cafe">
+  <div class="demo__head">
+    <div class="logo">
+      <!-- Logo simple -->
+      <svg viewBox="0 0 120 36" class="logo-svg" aria-label="Café Aurora">
+        <text x="0" y="26" font-family="Manrope" font-weight="800" font-size="26" fill="currentColor">Café Aurora</text>
+      </svg>
+    </div>
+    <div class="head-actions">
+      <button class="btn cafe--ghost" data-scroll="#cafe-menu">Ver menú</button>
+      <button class="btn cafe--solid" data-scroll="#cafe-menu">Pide aquí</button>
+    </div>
+  </div>
+
+  <header class="hero">
+    <div class="hero__media">
+      <img src="https://images.pexels.com/photos/977878/pexels-photo-977878.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Café y bollería">
+    </div>
+    <div class="hero__copy">
+      <h2>Hecho a mano, servido con calma ☕</h2>
+      <p>Espresso, cold brew y panadería de la casa. Pide desde aquí y recoge en barra.</p>
+      <div class="hero__badges">
+        <span>Abierto hoy 7:00–20:00</span>
+        <span>Wi-Fi</span>
+        <span>Pet-friendly</span>
+      </div>
+    </div>
+  </header>
+
+  <div id="cafe-menu" class="menu-cards">
+    <article class="item">
+      <img src="https://images.pexels.com/photos/312418/pexels-photo-312418.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Latte">
+      <div>
+        <h3>Latte</h3>
+        <p>Leche cremosa y espresso doble.</p>
+      </div>
+      <div class="price">$10.000</div>
+      <button class="btn cafe--solid add" data-item="Latte">Agregar</button>
+    </article>
+    <article class="item">
+      <img src="https://images.pexels.com/photos/302896/pexels-photo-302896.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cold Brew">
+      <div>
+        <h3>Cold Brew</h3>
+        <p>12 horas de extracción en frío.</p>
+      </div>
+      <div class="price">$12.000</div>
+      <button class="btn cafe--solid add" data-item="Cold Brew">Agregar</button>
+    </article>
+    <article class="item">
+      <img src="https://images.pexels.com/photos/2135/food-coffee-cup-breakfast.jpg?auto=compress&cs=tinysrgb&w=1200" alt="Croissant">
+      <div>
+        <h3>Croissant</h3>
+        <p>Mantequilla francesa, hojaldre perfecto.</p>
+      </div>
+      <div class="price">$7.000</div>
+      <button class="btn cafe--solid add" data-item="Croissant">Agregar</button>
+    </article>
+  </div>
+
+  <aside class="cart">
+    <h4>Tu pedido</h4>
+    <ul id="cartList"></ul>
+    <button class="btn cafe--ghost" id="cartClear">Vaciar</button>
+    <button class="btn cafe--solid" id="cartSend">Enviar por WhatsApp</button>
+  </aside>
+
+  <p style="margin-top:10px">
+    <a class="btn cafe--ghost" href="cafe/index.html">Ver demo completa →</a>
+  </p>
+</section>
+
+<!-- ========== DEMO 2: HOTEL / DISPONIBILIDAD + RESERVA ========== -->
+<section id="hotel" class="demo demo-hotel">
+  <header class="hero">
+    <div class="hero__copy">
+      <div class="logo logo--hotel">
+        <svg viewBox="0 0 180 36" class="logo-svg" aria-label="Hotel Mar de Luna">
+          <text x="0" y="26" font-family="Manrope" font-weight="800" font-size="26" fill="currentColor">Hotel Mar de Luna</text>
+        </svg>
+      </div>
+      <h2>Descanso frente al mar</h2>
+      <p>Habitaciones con vista, desayuno incluido y reserva en 3 pasos.</p>
+      <form class="hotel-form" id="hotelForm">
+        <label>Entrada <input type="date" name="in" required></label>
+        <label>Salida <input type="date" name="out" required></label>
+        <label>Personas
+          <select name="guests">
+            <option>1</option><option selected>2</option><option>3</option><option>4</option>
+          </select>
+        </label>
+        <button class="btn hotel--solid" type="submit">Ver disponibilidad</button>
+      </form>
+      <div class="hotel-result" id="hotelResult" hidden>Disponibilidad encontrada ✅ — Suite Vista Mar • $280.000/noche</div>
+    </div>
+    <div class="hero__media">
+      <img src="https://images.pexels.com/photos/258154/pexels-photo-258154.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Vista al mar">
+    </div>
+  </header>
+</section>
+
+<!-- ========== DEMO 3: FERRETERÍA / CATÁLOGO + COTIZAR ========== -->
+<section id="ferreteria" class="demo demo-ferre">
+  <header class="hero">
+    <div class="hero__media">
+      <img src="https://images.pexels.com/photos/257700/pexels-photo-257700.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Ferretería">
+    </div>
+    <div class="hero__copy">
+      <div class="logo logo--ferre">
+        <svg viewBox="0 0 220 36" class="logo-svg" aria-label="Ferretería El Tornillo">
+          <text x="0" y="26" font-family="Manrope" font-weight="800" font-size="26" fill="currentColor">Ferretería El Tornillo</text>
+        </svg>
+      </div>
+      <h2>Todo para tu obra</h2>
+      <p>Consulta precios y cotiza por WhatsApp en un clic.</p>
+      <div class="grid-catalog">
+        <div class="p">
+          <img src="https://images.pexels.com/photos/209235/pexels-photo-209235.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Taladro">
+          <h3>Taladro Percutor</h3>
+          <span class="price">$320.000</span>
+          <button class="btn ferre--solid cotizar" data-item="Taladro Percutor">Cotizar</button>
+        </div>
+        <div class="p">
+          <img src="https://images.pexels.com/photos/1249611/pexels-photo-1249611.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Llaves">
+          <h3>Juego de Llaves</h3>
+          <span class="price">$95.000</span>
+          <button class="btn ferre--solid cotizar" data-item="Juego de Llaves">Cotizar</button>
+        </div>
+        <div class="p">
+          <img src="https://images.pexels.com/photos/1220066/pexels-photo-1220066.jpeg?auto=compress&cs=tinysrgb&w=1200" alt="Cinta métrica">
+          <h3>Cinta Métrica 8m</h3>
+          <span class="price">$28.000</span>
+          <button class="btn ferre--solid cotizar" data-item="Cinta Métrica 8m">Cotizar</button>
+        </div>
+      </div>
+    </div>
+  </header>
+</section>
+
+<!-- ========== DEMO 4: MICROCREDITOS / FORM + ELEGIBILIDAD ========== -->
+<section id="microcreditos" class="demo demo-fin">
+  <header class="hero">
+    <div class="hero__copy">
+      <div class="logo logo--fin">
+        <svg viewBox="0 0 260 36" class="logo-svg" aria-label="Crédito Ágil">
+          <text x="0" y="26" font-family="Manrope" font-weight="800" font-size="26" fill="currentColor">Crédito Ágil</text>
+        </svg>
+      </div>
+      <h2>Microcréditos para crecer</h2>
+      <p>Responde 3 preguntas y te decimos si eres elegible ahora mismo.</p>
+      <form class="fin-form" id="finForm">
+        <label>Monto solicitado
+          <input type="number" name="monto" min="200000" step="50000" placeholder="400000" required>
+        </label>
+        <label>Tiempo en negocio
+          <select name="antig">
+            <option>3–6 meses</option><option selected>6–12 meses</option><option>+12 meses</option>
+          </select>
+        </label>
+        <label>Ventas mensuales aprox.
+          <input type="number" name="ventas" min="500000" step="50000" placeholder="2000000" required>
+        </label>
+        <button class="btn fin--solid" type="submit">Evaluar</button>
+      </form>
+      <div class="fin-result" id="finResult" hidden>Elegible ✅ — Te contactaremos por WhatsApp.</div>
+    </div>
+    <div class="hero__media">
+      <img src="https://images.pexels.com/photos/6694966/pexels-photo-6694966.jpeg?auto=compress&cs=tinysrgb&w=1600" alt="Negocio pequeño">
+    </div>
+  </header>
+</section>
+
+<footer class="demo-foot">
+  <div class="demo-foot__inner">
+    <span>Programamos — demos</span>
+    <a href="#cafe">Arriba ↑</a>
+  </div>
+</footer>
+
+<script src="demo.js" defer></script>
+</body>
+</html>
