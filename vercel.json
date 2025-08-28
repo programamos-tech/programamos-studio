@@ -1,8 +1,7 @@
 {
   "version": 2,
-  "cleanUrls": true,
-  "routes": [
-    { "src": "/", "dest": "landing-programamos/landing/index.html" },
-    { "src": "/(.*)", "dest": "landing-programamos/landing/$1" }
+  "rewrites": [
+    { "source": "/", "destination": "/landing-programamos/landing/index.html" },
+    { "source": "/(.*)", "destination": "/landing-programamos/landing/$1" }
   ]
 }
